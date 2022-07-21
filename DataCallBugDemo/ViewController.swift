@@ -11,6 +11,11 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let url = URL(string: "https://jsonplaceholder.typicode.com/todos/1'")
+        
+        let _ = try? Data(contentsOf: url!)
+        
         // Do any additional setup after loading the view.
     }
 
